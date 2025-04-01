@@ -18,6 +18,11 @@ This project is an AI-powered chatbot designed to answer questions related to ad
   - **Sentence-BERT** for question encoding
   - **Google Gemini API** for intelligent responses
   - **Scikit-learn** for similarity computations
+
+## Demo Web Application
+**Here’s a screenshot of the web application interface:**
+
+
 ## Installation
 ### Prerequisites
 - Python 3.8+
@@ -52,11 +57,6 @@ This project is an AI-powered chatbot designed to answer questions related to ad
 6. **Access the Web App**
    Open `http://127.0.0.1:5000/` in your browser.
 
-## Deployment (CI/CD Pipeline)
-This project is designed for seamless deployment with **CI/CD** tools:
-- GitHub Actions for automated testing and deployment.
-- Future deployment on **Azure Databricks**.
-- Docker support for containerized deployment.
 
 ## Future Improvements
 - **Expand AI Capabilities**: Improve chatbot reasoning using fine-tuned LLM models.
