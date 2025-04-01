@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Xử Phạt Giao Thông</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🚦 Chatbot Luật Giao Thông 🚗</h1>
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Nhập câu hỏi của bạn...">
+        <button onclick="sendMessage()">Gửi</button>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            let inputField = document.getElementById("user-input");
+            let chatBox = document.getElementById("chat-box");
+            let userMessage = inputField.value.trim();
+
+            if (userMessage === "") return;
+
+            chatBox.innerHTML += `<div class="user-msg">🚹 ${userMessage}</div>`;
+            inputField.value = "";
+
+            let response = await fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: userMessage })
+            });
+
+            let data = await response.json();
+            chatBox.innerHTML += `<div class="bot-msg">🤖 ${data.response}</div>`;
+        }
+    </script>
+</body>
+</html>
