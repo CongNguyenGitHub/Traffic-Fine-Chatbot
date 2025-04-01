@@ -19,7 +19,7 @@ This project is an AI-powered chatbot designed to answer questions related to ad
 
 ## Demo Web Application
 **Here’s a screenshot of the web application interface:**
-
+![Demo](static/images/demo.png)
 
 ## Installation
 ### Prerequisites
@@ -47,6 +47,7 @@ This project is an AI-powered chatbot designed to answer questions related to ad
    Create a `.env` file and add your Google API key:
    ```
    GENAI_API_KEY=your_api_key_here
+   FLASK_APP=src/app.py
    ```
 5. **Run the Application**
    ```bash
