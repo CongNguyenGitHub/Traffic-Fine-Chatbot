@@ -52,7 +52,7 @@ all_laws, all_embeddings = load_law_data(file_path)
 
 def split_questions_with_gemini(text):
     """Sử dụng Gemini để tách câu hỏi thành các câu nhỏ."""
-    prompt = ("Hãy tách đoạn văn bản sau thành các câu hỏi riêng biệt, chỉ trả về danh sách câu hỏi, không thêm giải thích: \n" + text)
+    prompt = ("Nếu có nhiều câu hỏi thì hãy tách đoạn văn bản sau thành các câu hỏi riêng biệt, chỉ trả về danh sách câu hỏi, không thêm giải thích: \n" + text)
     response = gen_model.generate_content(prompt)
     
     if not response.text:
