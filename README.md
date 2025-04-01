@@ -19,7 +19,7 @@ This project is an AI-powered chatbot designed to answer questions related to ad
 
 ## Demo Web Application
 **Here’s a screenshot of the web application interface:**
-![Demo](static/images/demo.png)
+![Demo](src/static/images/demo.png)
 
 ## Installation
 ### Prerequisites
