@@ -7,8 +7,6 @@ This project is an AI-powered chatbot designed to answer questions related to ad
 - **Web-based AI Chatbot**: Developed using **Flask** for the backend and **HTML/CSS/JavaScript** for the frontend.
 - **AI/ML Integration**: Utilizes **Google Gemini API** for natural language processing and **Sentence-BERT** for question similarity detection.
 - **Database Management**: Stores legal data in a structured JSON format.
-- **Full Stack Development**: Implemented with Python (Flask), JavaScript (React/Node.js in future updates), and SQL for data management.
-
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript (React in future updates)
@@ -33,8 +31,8 @@ This project is an AI-powered chatbot designed to answer questions related to ad
 ### Steps to Run the Project
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/ai-legal-chatbot.git
-   cd ai-legal-chatbot
+   git clone git@github.com:CongNguyenGitHub/Traffic-Fine-Chatbot.git
+   cd Traffic-Fine-Chatbot
    ```
 2. **Set Up the Virtual Environment**
    ```bash
