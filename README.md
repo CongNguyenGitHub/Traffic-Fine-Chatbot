@@ -1,4 +1,4 @@
-# AI-Powered Legal Chatbot
+# Traffic-Fine-Chatbot
 
 ## Overview
 This project is an AI-powered chatbot designed to answer questions related to administrative penalties for traffic violations. It leverages NLP and AI models to provide accurate and context-aware responses based on legal documents.
